@@ -1,0 +1,16 @@
+# Ignore node modules from both client and server
+client/node_modules/
+server/node_modules/
+
+# Ignore build files
+client/build/
+
+# OS/system junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# VS Code workspace files
+.vscode/
