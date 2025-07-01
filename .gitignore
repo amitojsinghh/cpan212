@@ -1,3 +1,5 @@
 Lab3/client/node_modules/
 Lab3/server/node_modules/
 # existing content from GitHub (remote)
+node_modules
+.env
