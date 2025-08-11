@@ -1,0 +1,103 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  color: #1f1f1f;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  background: linear-gradient(90deg, #ff4e50, #1e90ff); /* red to blue */
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-bottom: 4px solid #fff;
+}
+
+nav a {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffecec;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Page Container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  animation: fadeIn 0.7s ease;
+}
+
+/* Headings */
+h2 {
+  font-size: 2rem;
+  color: #1e90ff;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+/* Text */
+p, li {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "• ";
+  color: #ff4e50;
+  font-weight: bold;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
